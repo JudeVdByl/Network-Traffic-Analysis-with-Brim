@@ -24,22 +24,25 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
    - Processed the `sample.pcap` file and looked at DNS logs.
    - Found the first **DNS log** and identified the `qclass_name` as `C_INTERNET`.
 
-   ![DNS Log Analysis](https://via.placeholder.com/400x200)
+   ![DNS Log Analysis]()
 
 ### 2. Investigate NTP Logs
    - Identified the **NTP log** and found that the duration of the log was `0.005 seconds`.
 
-   ![NTP Log Duration](https://via.placeholder.com/400x200)
+ ![image10](https://github.com/user-attachments/assets/d99b46f1-ca9a-421a-a82a-f5296b1a1bed)
+
 
 ### 3. STATS Packet Analysis
    - Inspected the STATS log and determined the `reassem_tcp_size` to be **540**.
 
-   ![STATS Log Analysis](https://via.placeholder.com/400x200)
+   ![image21](https://github.com/user-attachments/assets/ca8176d7-ca47-482f-a0ec-f159dbefdf26)
+
 
 ### 4. GIF File Detection
    - Investigated the `gif` files and found the file `cat01_with_hidden_text.gif`.
 
-   ![GIF Detection](https://via.placeholder.com/400x200)
+   ![image18](https://github.com/user-attachments/assets/69f0d53d-84c0-47dd-8d0f-587b628a5578)
+
 
 ### 5. City Name Detection from conn log
    - Used the following command to identify the number of city names:
@@ -48,7 +51,8 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Discovered **2 cities**: `Eppelborn` and one other city.
 
-   ![City Name Detection](https://via.placeholder.com/400x200)
+   ![image13](https://github.com/user-attachments/assets/428cb88a-55d4-4b00-bcd3-3d049818c028)
+
 
 ### 6. Suricata Alerts
    - Queried **Suricata alerts** using the command:
@@ -57,7 +61,7 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Identified the signature ID for "Potential Corporate Privacy Violation" as `2,012,887`.
 
-   ![Suricata Alert Investigation](https://via.placeholder.com/400x200)
+   ![image15](https://github.com/user-attachments/assets/be5a164b-115d-4a76-96e3-c2e82326344a)
 
 ### 7. CobaltStrike Connections on Port 443
    - Executed the following query to determine the number of connections:
@@ -66,12 +70,14 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Found **328 connections** using port `443`.
 
-   ![CobaltStrike Detection](https://via.placeholder.com/400x200)
+   ![image22](https://github.com/user-attachments/assets/26b3c1cd-d848-49bc-94b4-cc6abf64cf46)
+
 
 ### 8. Secondary C2 Channel Detection
    - Discovered the secondary C2 channel in the case, identified as **IcedID**.
 
-   ![Secondary C2 Detection](https://via.placeholder.com/400x200)
+   ![image24](https://github.com/user-attachments/assets/32bb1527-396c-458e-94f9-2cdb5f532c92)
+
 
 ### 9. Connections Using Port 19999
    - I used the following command to find the number of connections on port 19999:
@@ -80,7 +86,8 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Found **22 connections** on port `19999`.
 
-   ![Port 19999 Connections](https://via.placeholder.com/400x200)
+   ![image11](https://github.com/user-attachments/assets/6c3dbbb1-9a1e-4ac8-9d5e-f86a6040eee3)
+
 
 ### 10. Service on Port 6666
    - I ran the following query to identify the service on port 6666:
@@ -89,7 +96,7 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - The service was identified as **IRC**.
 
-   ![IRC Service Detection](https://via.placeholder.com/400x200)
+![image9](https://github.com/user-attachments/assets/cf56c158-a97e-4f46-8368-5bd8844e1429)
 
 ### 11. Transferred Bytes Analysis
    - To calculate the total bytes transferred, I used this command:
@@ -98,7 +105,7 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Determined that a total of **3,729 bytes** were transferred to `101.201.172.235:8888`.
 
-   ![Transferred Bytes Calculation](https://via.placeholder.com/400x200)
+![image20](https://github.com/user-attachments/assets/1fefd78f-0599-4ebc-913a-2f6d521e284b)
 
 ### 12. MITRE Tactic ID
    - Queried the data with the following command to identify the detected MITRE tactic ID:
@@ -107,7 +114,7 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
      ```
    - Identified the MITRE tactic ID as `TA0040`.
 
-   ![MITRE Tactic ID](https://via.placeholder.com/400x200)
+![image16](https://github.com/user-attachments/assets/ebb15cf1-619c-4cb2-bc82-f994b3ab545f)
 
 ## Conclusion
 
