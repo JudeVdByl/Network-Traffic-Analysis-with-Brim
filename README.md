@@ -24,7 +24,8 @@ To analyze network traffic from a provided PCAP file using **Brim**, identify sp
    - Processed the `sample.pcap` file and looked at DNS logs.
    - Found the first **DNS log** and identified the `qclass_name` as `C_INTERNET`.
 
-   ![DNS Log Analysis]()
+   ![image6](https://github.com/user-attachments/assets/9b75186c-7b9f-4730-b7ad-f78f8ef0f937)
+
 
 ### 2. Investigate NTP Logs
    - Identified the **NTP log** and found that the duration of the log was `0.005 seconds`.
